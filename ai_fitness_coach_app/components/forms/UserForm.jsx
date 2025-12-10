@@ -66,7 +66,7 @@ export default function ModernFitnessForm() {
       alert("Form submitted successfully! Check console for data.");
    
       reset();
-      
+
     } catch (err) {
       console.error(err);
       alert("Something went wrong. Try again.");
@@ -305,7 +305,7 @@ export default function ModernFitnessForm() {
                 type="submit"
                 disabled={loading}
                 className="relative w-full h-11 sm:h-12 text-base sm:text-lg font-semibold
-               bg-gradient-to-r from-blue-600 to-indigo-600
+               bg-linear-to-r from-blue-600 to-indigo-600
                hover:from-blue-700 hover:to-indigo-700"
               >
                 {/* Centered Spinner inside button (kept for visual continuity) */}
@@ -322,14 +322,13 @@ export default function ModernFitnessForm() {
           </form>
         </div>
 
-        {/* Full-screen overlay spinner (centered) shown while loading */}
+
         {loading && (
           <div
             aria-hidden="true"
             className="fixed inset-0 z-50 flex items-center justify-center bg-white/40 backdrop-blur-sm"
           >
             <div className="flex items-center justify-center">
-              {/* If your Spinner accepts className, it will pick up sizing */}
               <Spinner className="w-14 h-14" />
             </div>
           </div>
