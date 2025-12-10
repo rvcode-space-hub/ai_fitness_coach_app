@@ -10,6 +10,8 @@
 !.yarn/releases
 !.yarn/versions
 
+Notes.txt
+
 # testing
 /coverage
 
@@ -19,6 +21,7 @@
 
 # production
 /build
+Notes
 
 # misc
 .DS_Store
